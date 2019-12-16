@@ -1,0 +1,256 @@
+@media (min-width: 1281px) {
+  body #screenPadding {
+    padding: 0 12rem 0 12rem; }
+  body #breakdownPadding {
+    padding: 0 12rem 0 12rem; } }
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  body #screenPadding {
+    padding: 0 7rem 0 7rem; }
+  body #breakdownPadding {
+    padding: 0 7rem 0 7rem; } }
+
+@media only screen and (min-device-width: 325px) and (max-device-width: 823px) and (orientation: portrait) {
+  body #screenPadding {
+    padding: 0 1rem 0 1rem; }
+  body #breakdownPadding {
+    padding: 0 0rem 0 0rem; }
+  body .pageDivider .topHalf {
+    height: 45vh !important; }
+  body .breakdown, body ul, body li {
+    font-size: 11px; } }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 823px) and (orientation: landscape) {
+  body #screenPadding {
+    padding: 0 5rem 0 5rem; }
+  body #breakdownPadding {
+    padding: 0 5rem 0 5rem; }
+  body .pageDivider .topHalf {
+    height: 70vh !important; }
+    body .pageDivider .topHalf .navbar {
+      height: 12vh !important; }
+  body .pageDivider .bottomHalf {
+    height: 85vh !important; }
+    body .pageDivider .bottomHalf .toDoItem {
+      height: 15vh !important; }
+  body .breakdown, body ul, body li {
+    font-size: 11px; } }
+
+html {
+  box-sizing: border-box;
+  font-family: 'Open-Sans', sans-serif; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0; }
+
+#screenPadding {
+  padding: 0 5rem 0 5rem; }
+
+#breakdownPadding {
+  padding: 0 2rem 0 2rem; }
+
+body {
+  width: 100vw; }
+  body .pageDivider {
+    display: grid;
+    grid-auto-rows: repeat(2, 1fr);
+    overflow: hidden; }
+    body .pageDivider .topHalf {
+      display: grid;
+      height: 40vh;
+      grid-row: 1 / span 1; }
+      body .pageDivider .topHalf .navbar {
+        display: flex;
+        justify-content: space-between;
+        height: 7vh;
+        margin-top: .5rem;
+        border-bottom: 2px solid rgba(230, 229, 229, 0.7); }
+        body .pageDivider .topHalf .navbar .appLogo {
+          height: 2.5rem;
+          width: 2.5rem; }
+        body .pageDivider .topHalf .navbar .burger {
+          height: 3em;
+          width: 3em;
+          position: relative;
+          font-size: 12px;
+          cursor: pointer;
+          transition: .2s all;
+          -webkit-tap-highlight-color: transparent; }
+          body .pageDivider .topHalf .navbar .burger .burger-lines:after {
+            left: 0;
+            top: -1em; }
+          body .pageDivider .topHalf .navbar .burger .burger-lines:before {
+            left: 1em;
+            top: 1em; }
+          body .pageDivider .topHalf .navbar .burger:after {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 150%;
+            width: 150%;
+            top: -25%;
+            left: -25%; }
+          body .pageDivider .topHalf .navbar .burger .burger-lines {
+            top: 50%;
+            margin-top: -0.125em; }
+            body .pageDivider .topHalf .navbar .burger .burger-lines, body .pageDivider .topHalf .navbar .burger .burger-lines:after, body .pageDivider .topHalf .navbar .burger .burger-lines:before {
+              pointer-events: none;
+              display: block;
+              content: '';
+              width: 100%;
+              border-radius: 0.25em;
+              background-color: white;
+              height: 0.25em;
+              position: absolute;
+              transform: rotate(0); }
+            body .pageDivider .topHalf .navbar .burger .burger-lines:after {
+              left: 0;
+              top: -1em; }
+            body .pageDivider .topHalf .navbar .burger .burger-lines:before {
+              left: 1em;
+              top: 1em; }
+        body .pageDivider .topHalf .navbar .burger.burger-arrow .burger-lines, body .pageDivider .topHalf .navbar .burger.burger-arrow .burger-lines:after, body .pageDivider .topHalf .navbar .burger.burger-arrow .burger-lines:before {
+          transition: .2s top, .2s left, .2s transform, .4s background-color .2s; }
+        body .pageDivider .topHalf .navbar .burger.burger-arrow .burger-lines:after, body .pageDivider .topHalf .navbar .burger.burger-arrow .burger-lines:before {
+          width: 2em; }
+        body .pageDivider .topHalf .navbar .burger.burger-arrow.open .burger-lines, body .pageDivider .topHalf .navbar .burger.burger-arrow.open .burger-lines:after, body .pageDivider .topHalf .navbar .burger.burger-arrow.open .burger-lines:before {
+          transition: .2s background-color, .2s top, .2s left, .2s transform; }
+        body .pageDivider .topHalf .navbar .burger.burger-arrow.open .burger-lines {
+          background-color: black; }
+        body .pageDivider .topHalf .navbar .burger.burger-arrow.open .burger-lines:before, body .pageDivider .topHalf .navbar .burger.burger-arrow.open .burger-lines:after {
+          left: -.3em;
+          top: 0px; }
+        body .pageDivider .topHalf .navbar .burger.burger-arrow.open .burger-lines:before {
+          top: -.62em;
+          transform: rotate(-45deg); }
+        body .pageDivider .topHalf .navbar .burger.burger-arrow.open .burger-lines:after {
+          top: .62em;
+          transform: rotate(45deg); }
+        body .pageDivider .topHalf .navbar .burger .burger-lines,
+        body .pageDivider .topHalf .navbar .burger .burger-lines:after,
+        body .pageDivider .topHalf .navbar .burger .burger-lines:before {
+          background-color: black; }
+      body .pageDivider .topHalf .goalDescription {
+        display: grid;
+        grid-row: 70vh;
+        width: 100vw;
+        grid-auto-columns: repeat(2, 1fr); }
+        body .pageDivider .topHalf .goalDescription .centerDescriptionWrapper {
+          grid-column: 1 / span 1;
+          width: 70vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+          body .pageDivider .topHalf .goalDescription .centerDescriptionWrapper h1 {
+            font-size: 2rem;
+            font-weight: 900; }
+          body .pageDivider .topHalf .goalDescription .centerDescriptionWrapper h5 {
+            font-size: .7rem;
+            font-weight: 500;
+            color: gray; }
+        body .pageDivider .topHalf .goalDescription .goalIcon {
+          grid-column: 2 / span 1;
+          width: 30vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-end; }
+          body .pageDivider .topHalf .goalDescription .goalIcon img {
+            height: 8rem;
+            width: 8rem; }
+      body .pageDivider .topHalf .breakdown {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: .9rem;
+        cursor: pointer; }
+        body .pageDivider .topHalf .breakdown ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 100vw;
+          font-size: .8rem;
+          list-style: none;
+          color: gray; }
+          body .pageDivider .topHalf .breakdown ul li {
+            border-bottom: 6px solid white; }
+            body .pageDivider .topHalf .breakdown ul li .sideSpace {
+              color: transparent; }
+            body .pageDivider .topHalf .breakdown ul li.selected {
+              border-color: #56CCF2;
+              color: black;
+              font-weight: 900; }
+    body .pageDivider .bottomHalf {
+      height: 60vh;
+      width: 100vw;
+      grid-row: 2 / span 1;
+      background-color: #3F3E59;
+      color: white;
+      padding-top: 5rem;
+      border: 1px 0px 0px 0px solid white;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px; }
+      body .pageDivider .bottomHalf .toDoItem {
+        height: 9vh; }
+        body .pageDivider .bottomHalf .toDoItem ul {
+          height: 5vh;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-end;
+          justify-content: space-between;
+          border-bottom: 1px solid rgba(230, 230, 230, 0.5);
+          list-style: none; }
+          body .pageDivider .bottomHalf .toDoItem ul li {
+            font-size: 1rem;
+            margin-bottom: 1rem; }
+          body .pageDivider .bottomHalf .toDoItem ul .subMenuArrow {
+            margin-right: .3rem;
+            cursor: pointer; }
+            body .pageDivider .bottomHalf .toDoItem ul .subMenuArrow img {
+              height: .6rem;
+              width: .6rem; }
+          body .pageDivider .bottomHalf .toDoItem ul .threeDotMenu img {
+            height: 1rem;
+            width: 1rem; }
+      body .pageDivider .bottomHalf .expanded {
+        height: 15vh;
+        border-bottom: 1px solid rgba(230, 230, 230, 0.5); }
+        body .pageDivider .bottomHalf .expanded p {
+          font-size: .8rem;
+          color: whitesmoke;
+          margin-left: 40px; }
+        body .pageDivider .bottomHalf .expanded ul li .subMenuArrow {
+          margin-right: .3rem; }
+          body .pageDivider .bottomHalf .expanded ul li .subMenuArrow img {
+            height: .6rem;
+            width: .6rem;
+            transform: rotate(0.25turn); }
+      body .pageDivider .bottomHalf .addItem {
+        font-size: 1.1rem; }
+        body .pageDivider .bottomHalf .addItem ul {
+          display: flex;
+          border: none;
+          justify-content: center;
+          align-content: center; }
+          body .pageDivider .bottomHalf .addItem ul li {
+            font-size: 1.1rem; }
+        body .pageDivider .bottomHalf .addItem .addNewButton {
+          cursor: pointer; }
+          body .pageDivider .bottomHalf .addItem .addNewButton img {
+            height: 1rem;
+            width: 1rem;
+            margin-right: .5rem; }
+            body .pageDivider .bottomHalf .addItem .addNewButton img:hover {
+              animation-name: buttonTurn;
+              animation-duration: 1.5s; }
+
+@keyframes buttonTurn {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }

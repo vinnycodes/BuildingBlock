@@ -1,0 +1,37 @@
+@media (min-width: 1281px) {
+  body #screenPadding {
+    padding: 0 12rem 0 12rem; }
+  body #breakdownPadding {
+    padding: 0 12rem 0 12rem; } }
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  body #screenPadding {
+    padding: 0 7rem 0 7rem; }
+  body #breakdownPadding {
+    padding: 0 7rem 0 7rem; } }
+
+@media only screen and (min-device-width: 325px) and (max-device-width: 823px) and (orientation: portrait) {
+  body #screenPadding {
+    padding: 0 1rem 0 1rem; }
+  body #breakdownPadding {
+    padding: 0 0rem 0 0rem; }
+  body .pageDivider .topHalf {
+    height: 45vh !important; }
+  body .breakdown, body ul, body li {
+    font-size: 11px; } }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 823px) and (orientation: landscape) {
+  body #screenPadding {
+    padding: 0 5rem 0 5rem; }
+  body #breakdownPadding {
+    padding: 0 5rem 0 5rem; }
+  body .pageDivider .topHalf {
+    height: 70vh !important; }
+    body .pageDivider .topHalf .navbar {
+      height: 12vh !important; }
+  body .pageDivider .bottomHalf {
+    height: 85vh !important; }
+    body .pageDivider .bottomHalf .toDoItem {
+      height: 15vh !important; }
+  body .breakdown, body ul, body li {
+    font-size: 11px; } }
