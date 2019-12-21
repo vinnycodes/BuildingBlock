@@ -57,8 +57,7 @@ body {
   width: 100vw; }
   body .pageDivider {
     display: grid;
-    grid-auto-rows: repeat(2, 1fr);
-    overflow: hidden; }
+    grid-auto-rows: repeat(2, 1fr); }
     body .pageDivider .topHalf {
       display: grid;
       height: 40vh;
@@ -66,12 +65,42 @@ body {
       body .pageDivider .topHalf .navbar {
         display: flex;
         justify-content: space-between;
-        height: 7vh;
-        margin-top: .5rem;
+        align-items: center;
+        height: 6vh;
+        margin: .5rem 0 .5rem 0;
         border-bottom: 2px solid rgba(230, 229, 229, 0.7); }
         body .pageDivider .topHalf .navbar .appLogo {
           height: 2.5rem;
           width: 2.5rem; }
+        body .pageDivider .topHalf .navbar #navMenu {
+          display: flex;
+          flex-direction: row;
+          list-style-type: none;
+          align-items: center;
+          justify-content: flex-end;
+          width: 90%;
+          visibility: hidden; }
+          body .pageDivider .topHalf .navbar #navMenu li {
+            margin-right: 2rem;
+            font-weight: 600;
+            font-style: italic; }
+          body .pageDivider .topHalf .navbar #navMenu li:hover {
+            background-color: #56CCF2; }
+          body .pageDivider .topHalf .navbar #navMenu.open {
+            visibility: visible;
+            animation-name: 'fadeInRight';
+            -webkit-animation-name: fadeInRight;
+            animation-duration: 1s; }
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(0%, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
         body .pageDivider .topHalf .navbar .burger {
           height: 3em;
           width: 3em;
@@ -125,7 +154,7 @@ body {
           left: -.3em;
           top: 0px; }
         body .pageDivider .topHalf .navbar .burger.burger-arrow.open .burger-lines:before {
-          top: -.62em;
+          top: -.66em;
           transform: rotate(-45deg); }
         body .pageDivider .topHalf .navbar .burger.burger-arrow.open .burger-lines:after {
           top: .62em;
@@ -214,7 +243,7 @@ body {
             body .pageDivider .bottomHalf .toDoItem ul .subMenuArrow img {
               height: .6rem;
               width: .6rem; }
-          body .pageDivider .bottomHalf .toDoItem ul .threeDotMenu img {
+          body .pageDivider .bottomHalf .toDoItem ul .ellipsesMenu img {
             height: 1rem;
             width: 1rem; }
       body .pageDivider .bottomHalf .expanded {
@@ -254,3 +283,27 @@ body {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
+      body .pageDivider .bottomHalf .goalType .goalList {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+        padding-left: 5rem;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 35px; }
+        body .pageDivider .bottomHalf .goalType .goalList li {
+          padding-right: 5rem; }
+        body .pageDivider .bottomHalf .goalType .goalList .currentGoal img {
+          background-color: #56CCF2;
+          border: 1px solid transparent;
+          border-radius: 30px; }
+        body .pageDivider .bottomHalf .goalType .goalList img {
+          height: 3.5rem;
+          width: 3.5rem;
+          padding: .3rem 0 .3rem 0; }
+        body .pageDivider .bottomHalf .goalType .goalList img:hover {
+          cursor: pointer;
+          background-color: #CB5CC3;
+          border: 1px solid transparent;
+          border-radius: 30px; }
