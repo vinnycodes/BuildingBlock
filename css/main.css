@@ -208,12 +208,16 @@ body {
           color: gray; }
           body .pageDivider .topHalf .breakdown ul li {
             border-bottom: 6px solid white; }
-            body .pageDivider .topHalf .breakdown ul li .sideSpace {
-              color: transparent; }
-            body .pageDivider .topHalf .breakdown ul li.selected {
+            body .pageDivider .topHalf .breakdown ul li.selectedList {
               border-color: #56CCF2;
               color: black;
               font-weight: 900; }
+            body .pageDivider .topHalf .breakdown ul li .sideSpace {
+              color: transparent; }
+          body .pageDivider .topHalf .breakdown ul.selectedList {
+            border-color: #56CCF2;
+            color: black;
+            font-weight: 900; }
     body .pageDivider .bottomHalf {
       height: 60vh;
       width: 100vw;
@@ -224,42 +228,51 @@ body {
       border: 1px 0px 0px 0px solid white;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px; }
-      body .pageDivider .bottomHalf .toDoItem {
-        height: 9vh; }
-        body .pageDivider .bottomHalf .toDoItem ul {
-          height: 5vh;
-          display: flex;
-          flex-direction: row;
-          align-items: flex-end;
-          justify-content: space-between;
-          border-bottom: 1px solid rgba(230, 230, 230, 0.5);
-          list-style: none; }
-          body .pageDivider .bottomHalf .toDoItem ul li {
-            font-size: 1rem;
-            margin-bottom: 1rem; }
-          body .pageDivider .bottomHalf .toDoItem ul .subMenuArrow {
-            margin-right: .3rem;
-            cursor: pointer; }
-            body .pageDivider .bottomHalf .toDoItem ul .subMenuArrow img {
-              height: .6rem;
-              width: .6rem; }
+      body .pageDivider .bottomHalf .toDoItem ul {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        list-style: none; }
+        body .pageDivider .bottomHalf .toDoItem ul li {
+          font-size: 1rem;
+          margin-bottom: 1rem; }
+        body .pageDivider .bottomHalf .toDoItem ul .subMenuArrow {
+          margin-right: .3rem;
+          cursor: pointer; }
+          body .pageDivider .bottomHalf .toDoItem ul .subMenuArrow img {
+            height: .6rem;
+            width: .6rem; }
+        body .pageDivider .bottomHalf .toDoItem ul .ellipsesMenu {
+          cursor: pointer; }
           body .pageDivider .bottomHalf .toDoItem ul .ellipsesMenu img {
             height: 1rem;
             width: 1rem; }
-      body .pageDivider .bottomHalf .expanded {
+      body .pageDivider .bottomHalf .toDoItem.closed {
+        height: 8vh; }
+        body .pageDivider .bottomHalf .toDoItem.closed ul {
+          border-bottom: 1px solid rgba(230, 230, 230, 0.5); }
+      body .pageDivider .bottomHalf .toDoItem.expanded {
         height: 15vh;
-        border-bottom: 1px solid rgba(230, 230, 230, 0.5); }
-        body .pageDivider .bottomHalf .expanded p {
+        margin-bottom: 2rem; }
+        body .pageDivider .bottomHalf .toDoItem.expanded p {
           font-size: .8rem;
           color: whitesmoke;
           margin-left: 40px; }
-        body .pageDivider .bottomHalf .expanded ul li .subMenuArrow {
+        body .pageDivider .bottomHalf .toDoItem.expanded ul li .subMenuArrow {
           margin-right: .3rem; }
-          body .pageDivider .bottomHalf .expanded ul li .subMenuArrow img {
+          body .pageDivider .bottomHalf .toDoItem.expanded ul li .subMenuArrow img {
             height: .6rem;
             width: .6rem;
             transform: rotate(0.25turn); }
+        body .pageDivider .bottomHalf .toDoItem.expanded .expandedList {
+          display: flex;
+          flex-direction: column;
+          list-style: inside;
+          margin-left: 5rem;
+          align-items: flex-start; }
       body .pageDivider .bottomHalf .addItem {
+        height: 8vh;
         font-size: 1.1rem; }
         body .pageDivider .bottomHalf .addItem ul {
           display: flex;
