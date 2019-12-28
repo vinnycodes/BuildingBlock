@@ -87,6 +87,7 @@ body {
           body .pageDivider .topHalf .navbar #navMenu li:hover {
             background-color: #56CCF2; }
           body .pageDivider .topHalf .navbar #navMenu.open {
+            cursor: pointer;
             visibility: visible;
             animation-name: 'fadeInRight';
             -webkit-animation-name: fadeInRight;
