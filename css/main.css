@@ -297,6 +297,29 @@ body {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
+      body .pageDivider .bottomHalf #addNewItem {
+        height: 4vh;
+        display: flex;
+        justify-content: center;
+        outline: none; }
+        body .pageDivider .bottomHalf #addNewItem input:focus {
+          outline: none; }
+        body .pageDivider .bottomHalf #addNewItem #newItem {
+          width: 85vh;
+          margin-right: 3rem;
+          border: 1px solid transparent;
+          border-radius: 25px;
+          font-size: 1rem;
+          padding-left: .7rem; }
+        body .pageDivider .bottomHalf #addNewItem button {
+          width: 15vh;
+          background-color: white;
+          border: 1px solid transparent;
+          border-radius: 25px;
+          font-size: .8rem;
+          font-weight: 700; }
+          body .pageDivider .bottomHalf #addNewItem button:focus {
+            outline: none; }
       body .pageDivider .bottomHalf .goalType .goalList {
         display: flex;
         flex-direction: row;
