@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +9,23 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <section class="pageDivider">
 
         <section class="topHalf">
-            
+
             <nav class="navbar" id="screenPadding">
-                
+
                 <div class="logo">
                     <a href=""><img src="./imgs/ice.svg" class="appLogo"></a>
                 </div>
 
-                <ul id="navMenu" class="">
-                    <li> <span style="color: transparent">_</span> How To <span style="color: transparent">_</span> </li>
+                <ul id="navMenu">
                     <li> <span style="color: transparent">_</span> About <span style="color: transparent">_</span> </li>
-                    <li> <span style="color: transparent">_</span> Contact <span style="color: transparent">_</span> </li>
+                    <li> <span style="color: transparent">_</span> Save <span style="color: transparent">_</span> </li>
+                    <li> <span style="color: transparent">_</span> Contact <span style="color: transparent">_</span>
+                    </li>
                 </ul>
 
                 <div class="burger burger-arrow" style="font-size: 10px">
@@ -30,16 +33,54 @@
                 </div>
             </nav>
 
-            <div class="goalDescription">
+            <div class="modal">
+                <div class="modalContent">
+                    <div class="modalLeft">
+                        <img src="./imgs/cubes.svg" alt="aboutPicture" class="modalPicture">
+                    </div>
+                    <div class="modalRight">
+                        <span class="modalClose">&times;</span>
+
+                        <br>
+
+                        <div class="modalDescription">
+                            <h1 class="model-header-name"> Building Blocks</h1>
+                            <br><br>
+                            <p>Inspired by <a href="https://jamesclear.com/atomic-habits" target="_blank">"Atomic
+                                    Habits" by James
+                                    Clear</a>
+                                I
+                                made it a goal of mine to focus not on my goals but on my systems. My habits. Whether it
+                                was
+                                working out, studying rigorously, or even meditating to overcome anxiety, these
+                                principles
+                                were
+                                vital to me. So don't think of this website as just another to do list app but rather a
+                                way
+                                to
+                                choose the right building blocks to become the person you've always wanted to be. </p>
+                            <br>
+                            <p class="modalQuote">“You should be far more concerned with your current trajectory than
+                                with your current
+                                results.”-
+                                James Clear.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <main class="goalDescription">
                 <div class="centerDescriptionWrapper" id="screenPadding">
 
                     <div class="centerDescription">
                         <h1>Health Progress</h1>
                         <br>
-                        <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, laudantium qui veniam mollitia fuga.</h5>
-    
+                        <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, laudantium qui veniam mollitia
+                            fuga.</h5>
+
                         <br><br>
-    
+
                         <!-- <h5>Goals: 0</h5>
                         <h5>In Progress: 0</h5>
                         <h5>Completed: 0</h5> -->
@@ -48,14 +89,15 @@
                 </div>
 
                 <div class="goalIcon" id="screenPadding">
-                    <img src="./imgs/health.svg" alt="health icon"/>
+                    <img src="./imgs/health.svg" alt="health icon" />
                 </div>
-            </div>
+            </main>
 
             <div class="breakdown">
                 <ul id="breakdownPadding">
                     <li><span class="sideSpace">____</span>BACKLOG<span class="sideSpace">____</span></li>
-                    <li class="selectedList"><span class="sideSpace">____</span>IN PROGRESS<span class="sideSpace">____</span></li>
+                    <li class="selectedList"><span class="sideSpace">____</span>IN PROGRESS<span
+                            class="sideSpace">____</span></li>
                     <li><span class="sideSpace">____</span>DONE<span class="sideSpace">____</span></li>
                     <li><span class="sideSpace">____</span>VALIDATED<span class="sideSpace">____</span></li>
                 </ul>
@@ -112,9 +154,10 @@
 
                 <div class="toDoItem addItem" id="screenPadding">
                     <ul>
-                        <li class="addNewSelect"> <span class="addNewButton"><img src="./imgs/addNewButton.svg" alt="submenu Arrow"></span> ADD NEW</li>
+                        <li class="addNewSelect"> <span class="addNewButton"><img src="./imgs/addNewButton.svg"
+                                    alt="submenu Arrow"></span> ADD NEW</li>
                     </ul>
-<!-- 
+                    <!-- 
                     <form id="addNewItem" action="">
                         <input id="newItem" type="text" autocomplete="off">
                         <button form="addNewItem" type="submit">Submit</button>
@@ -138,7 +181,8 @@
         </section>
 
     </section>
-    
-<script src="" async defer></script>
+
+    <script src="" async defer></script>
 <script type="text/javascript" src="js/bundle.js"></script></body>
+
 </html>
