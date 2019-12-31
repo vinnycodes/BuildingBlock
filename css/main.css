@@ -179,8 +179,12 @@ body {
           grid-template-columns: repeat(2, 1fr);
           position: relative;
           background-color: white;
+          background: #56ccf2;
+          background: linear-gradient(131deg, #56ccf2 0%, #66d1f3 29%, #f7fcfe 29%, white 90%, #d06cc9 90%, #cb5cc3 100%);
           margin: auto;
           width: 75%;
+          border: 1px solid white;
+          border-radius: 25px;
           -webkit-animation-name: animatetop;
           -webkit-animation-duration: 0.4s;
           animation-name: animatetop;
@@ -221,7 +225,7 @@ body {
               border-radius: 5px;
               color: white; }
             body .pageDivider .topHalf .modal .modalContent .modalDescription p {
-              font-weight: 300; }
+              font-weight: 500; }
               body .pageDivider .topHalf .modal .modalContent .modalDescription p a {
                 color: blue; }
             body .pageDivider .topHalf .modal .modalContent .modalDescription .modalQuote {
