@@ -249,6 +249,23 @@ body {
           body .pageDivider .bottomHalf .toDoItem ul .ellipsesMenu img {
             height: 1rem;
             width: 1rem; }
+        body .pageDivider .bottomHalf .toDoItem ul .nextSteps {
+          font-weight: 100;
+          font-size: 1rem;
+          background-color: #56CCF2;
+          padding: 3px 10px;
+          border: 1px solid #56CCF2;
+          border-radius: 25px;
+          word-spacing: .5rem; }
+          body .pageDivider .bottomHalf .toDoItem ul .nextSteps .deleteItemButton:hover,
+          body .pageDivider .bottomHalf .toDoItem ul .nextSteps .moveItemButton:hover,
+          body .pageDivider .bottomHalf .toDoItem ul .nextSteps .cancelItemButton:hover,
+          body .pageDivider .bottomHalf .toDoItem ul .nextSteps .moveToBacklog:hover,
+          body .pageDivider .bottomHalf .toDoItem ul .nextSteps .moveToInProgress:hover,
+          body .pageDivider .bottomHalf .toDoItem ul .nextSteps .moveToDone:hover,
+          body .pageDivider .bottomHalf .toDoItem ul .nextSteps .moveToValidated:hover {
+            color: #CB5CC3;
+            cursor: pointer; }
       body .pageDivider .bottomHalf .toDoItem.closed {
         height: 8vh; }
         body .pageDivider .bottomHalf .toDoItem.closed ul {
