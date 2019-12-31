@@ -307,8 +307,7 @@ body {
           font-size: 1rem;
           margin-bottom: 1rem; }
         body .pageDivider .bottomHalf .toDoItem ul .subMenuArrow {
-          margin-right: .3rem;
-          cursor: pointer; }
+          margin-right: .3rem; }
           body .pageDivider .bottomHalf .toDoItem ul .subMenuArrow img {
             height: .6rem;
             width: .6rem; }
